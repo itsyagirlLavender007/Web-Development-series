@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Titillium Web', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Navbar starts here */
+
+.navbar{
+    font-size:1.3rem;
+    background-color: rgb(27, 19, 7);
+}
+
+/* parent child selector */
+.ul > li{
+    float:left;
+    padding:20px;
+    margin-left:60px;
+}
+
+.navbar ul{           
+    overflow:auto;
+}
+
+.ul li{ 
+    list-style: none;
+}
+
+/* chaining selector - everything in one line */
+li a{
+    text-decoration: none;
+    color:white;
+} 
+
+li a:hover{
+    color:rgb(195, 160, 135);
+    font-size: 1.5rem;
+}
+
+input{
+    padding:4px;
+    border-radius: 5px;
+}
+
+.icon{
+    color:white;
+    margin-right:10px;
+}
+
+/* Navbar ends here */
+
+/* Intro page starts here */
+
+.coffeeIntro{
+    object-fit: cover;
+    width: 100%;
+    z-index:-1;
+    position: absolute;
+}
+
+.p1{
+    z-index:1;
+    position:relative;
+    color:rgb(226, 194, 135);
+    text-align: center;
+    padding-top: 180px;
+    font-size: 4rem;
+}
+
+.p2{
+    z-index:1;
+    text-align: center;
+    color:rgb(226, 194, 135);
+    font-size:1.3rem;
+}
+
+.p3{
+    z-index:1;
+    color:rgb(230, 216, 195);
+    padding-top: 200px;
+    padding-left:20px;
+    display: inline-block;
+}
+
+.p4{
+    z-index:1;
+    color:rgb(230, 216, 195);
+    padding-left:20px;
+    padding-top:50px;
+}
+
+/* Intro page ends here */
+
+
+
+/* Our Story starts here  */
+
+.ourStory{
+    margin-top:190px;
+    color:rgb(241, 238, 233);
+}
+
+.coffeeourStory{
+    object-fit: cover;
+    width: 100%;
+    height:110vh;
+    z-index:-1;
+    position: absolute;
+}
+
+h1{
+    z-index: 1;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 3rem;
+    color:rgb(226, 194, 135);
+}
+
+.ourStorypara{
+    padding-top:190px;
+}
+
+.ourStorypara > p{
+  padding-left:20px;
+  padding-bottom:5px;
+  color:rgb(230, 216, 195);
+  font-size:1.03rem;
+}
+
+/* Our Story ends here  */
+
+
+/* Coffee Menu starts here */
+
+.coffeeMenu{
+    margin-top:350px;
+}
+
+.coffeemenubg{
+    object-fit: cover;
+    width: 100%;
+    height:100vh;
+    z-index:-1;
+    position: absolute;
+}
+
+.coffeeMenu > h1{
+    color:rgb(226, 194, 135);
+}
+
+.coffeemenuOpening{
+    padding-top:50px;
+    text-align: center;
+    color:rgb(230, 216, 195);
+    font-weight: 600;
+}
+
+.coffeeMenumain{
+    color:rgb(226, 194, 135);
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.left{
+    padding-top:40px;
+    float:left;
+    padding-left:440px;
+}
+
+.right{
+    padding-top:40px;
+    float:right;
+    padding-right:440px;
+}
+
+.left > li{
+    padding-top:30px;
+    list-style: none;
+}
+
+.right > li{
+    padding-top:30px;
+    list-style: none;
+}
+
+span{
+    padding-left: 20px;
+}
+
+.smallDes{
+    padding-left:47px;
+    font-size:0.7rem;
+    font-weight:400;
+    color:rgb(230, 216, 195);
+}
+
+/* Coffee Menu ends here */
+
+
+/* Our products starts here */
+
+.ourProducts{
+    margin-top: 490px;
+    background-color: antiquewhite;
+    height:110vh;
+}
+
+.ourproductsTitle h1{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 3rem;
+    color:rgb(73, 63, 43);
+}
+
+.prodLeft{
+    padding-top: 50px;
+    float:left;
+    padding-left:65px;
+    width:300px;
+}
+
+.prodLeft > li{
+    list-style: none;
+}
+
+.prodLeft > li > img{
+    border:2px solid rgb(226, 194, 135);
+}
+
+
+.prodLeft > p{
+    text-align: center;
+    color:rgb(103, 88, 60);
+    font-weight: 900;
+    font-size: 1.2rem;
+    padding:3px;
+}
+
+p button{
+    border:2px solid rgb(226, 194, 135);
+    padding:5px;
+    width:70%;
+    font-weight:600;
+    color:rgb(103, 88, 60);
+}
+
+p button:hover{
+    cursor:pointer;
+    background-color: rgb(188, 163, 112);
+}
+
+.ourProductsIntro{
+    padding-top:40px;
+}
+
+.ourProductsIntro > p{
+    text-align: center;
+    color:rgb(103, 88, 60);
+    font-weight: 600;
+}
+
+
+/* Our products ends here */
+
+/* Booking starts here */
+
+.booking{
+    background-color: rgb(215, 191, 160);
+    height:95vh;
+}
+
+.bookingTitle > h1{
+    text-align: center;
+    font-size: 3rem;
+    color:rgb(73, 63, 43);
+}
+
+.bookdesp{
+    text-align: center;
+    color:rgb(103, 88, 60);
+    font-weight: 900;
+    font-size: 1.2rem;
+    padding-top:30px;
+}
+
+form{
+    padding-top:80px;
+    padding-left:400px;
+}
+
+input{
+    padding:5px;
+    width:30%;
+    border-radius:0;
+    border:2px solid rgb(67, 56, 34);
+    color:rgb(103, 88, 60);
+    font-weight: 900;
+    font-size: 1rem;
+    margin-bottom:20px;
+}
+
+.email{
+    margin-left:60px;
+}
+
+textarea{
+    padding:5px;
+    border-radius:0;
+    border:2px solid rgb(67, 56, 34);
+    color:rgb(103, 88, 60);
+    font-weight: 900;
+    font-size: 1rem;
+    margin-bottom:20px;
+}
+
+.button1{
+    border:2px solid rgb(67, 56, 34);
+    padding:10px;
+    width:10%;
+    font-weight:700;
+    color:rgb(103, 88, 60);
+    margin-left:325px;
+    background-color: rgb(166, 141, 91);
+    font-size:1rem;
+    cursor:pointer;
+}
+
+.button1:hover{
+    background-color: rgb(123, 100, 54);
+    color:rgb(215, 183, 141);
+}
+
+
+/* Booking ends here */
+
+
+/* Sale starts here */
+
+.saleMain{
+    float:left;
+    padding-top:130px;
+    margin-left:150px;
+    z-index:1;
+    width:80%;
+}
+
+.coffeebeans{
+    object-fit: cover;
+    width: 100%;
+    height:80vh;
+    z-index:-1;
+    position: absolute;
+}
+
+.saleMain{
+    padding-top:100px;
+}
+
+.saleInfo{
+    background-color: rgb(21, 19, 17);
+    height:53vh;
+    width:100%;
+}
+
+.saleIntro{
+    padding-top: 130px;
+    font-size: 2rem;
+    color:rgb(226, 183, 127);
+    text-align: center;
+}
+
+h2{
+    font-size: 1.4rem;
+    color:rgb(157, 124, 80);
+    text-align: center;
+} 
+
+.saleInfo > img{
+    padding-top:60px;
+    float:right;
+    padding-right:100px;
+}
+
+.saleInfo button{
+    margin-top:10px;
+    margin-left:350px;
+    padding-right:20px;
+    padding-left:20px;
+    padding-top:10px;
+    padding-bottom:10px;
+    font-weight:900;
+    color:rgb(103, 88, 60);
+    cursor: pointer;
+}
+
+.saleInfo button:hover{
+    background-color: rgb(217, 183, 121);
+}
+/* Sale ends here */
+
+
+/* Our blog starts here */
+
+.ourBlog{
+    margin-top:600px;
+    background-color: rgb(199, 182, 160);
+    height:120vh;
+}
+
+.ourBlogTitle h1{
+    text-align: center;
+    font-size: 3rem;
+    color:rgb(73, 63, 43);
+}
+
+.ourBlogIntro{
+    padding-top:20px;
+}
+
+.ourBlogIntro p{
+    text-align: center;
+    color:rgb(101, 84, 53);
+    font-weight: 900;
+    font-size: 1.2rem;
+    padding:2px;
+}
+
+.blogLeft{
+    margin-top: 50px;
+    float:left;
+    margin-left:120px;
+    width:400px;
+    border:2px solid rgb(103, 88, 60);
+    list-style: none;
+    background-color: rgb(183, 166, 135);
+}
+
+.blogLeft1{
+    margin-top: 50px;
+    float:left;
+    margin-left:20px;
+    width:400px;
+    border:2px solid rgb(103, 88, 60);
+    list-style: none;
+    background-color: rgb(183, 166, 135);
+}
+
+.blogLeft h3{
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+.blogLeft1 h3{
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+.blogLeft p{
+    padding-right:25px;
+    padding-left:25px;
+    padding-bottom: 5px;
+    font-weight: 700;
+}
+
+.blogLeft1 p{
+    padding-right:25px;
+    padding-left:25px;
+    padding-bottom: 5px;
+    font-weight: 700;
+}
+
+.readmore{
+    text-align: center;
+}
+
+.blogLeft button{
+    margin-top:10px;
+    margin-bottom:20px;
+    background-color:rgb(137, 122, 93); 
+    border:2px solid rgb(103, 88, 60);
+    color:aliceblue;
+}
+
+.blogLeft1 button{
+    color:aliceblue;
+    margin-top:10px;
+    margin-bottom:20px;
+    border:2px solid rgb(103, 88, 60);
+    background-color:rgb(137, 122, 93); 
+}
+
+/* Our blog ends here */
+
+/* Gallery starts here */
+
+.gallerypic{
+    float:left;
+}
+
+/* Gallery ends here */
+
+/* Footer starts here */
+
+.footer{
+    height:55vh;
+    background-color: rgb(41, 31, 16);
+}
+
+.footer1{
+    margin-top: 20px;
+    float:left;
+    margin-left:240px;
+    width:150px;
+    list-style: none;
+    padding:15px;
+}
+
+.footer1 p{
+    color:white;
+    font-size:1rem;
+    text-align: center;
+}
+
+.footer1 img{
+    padding-left:60px;
+}
+
+/* Footer ends here */
