@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makeup Website</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+        
+        *{
+        margin:0;
+        padding:0;
+        scroll-behavior: smooth;
+        font-family: 'Cinzel', serif;
+        }
+
+        /* Navbar starts here*/
+
+        .navbar .offer{
+            text-align: center;
+            background-color: rgb(255, 182, 194);
+        }
+
+        .homeUl{
+            display:flex;
+            justify-content: space-around;
+            background-color: black;
+            gap:2rem;
+            padding:10px;
+        } 
+
+        .homeUl li{
+            list-style: none;
+        }
+        
+        .homeUl li a {
+            flex: 1;
+            color:lavender;
+            text-decoration: none;
+        }
+
+        .logo{
+            text-align: center;
+            font-family: 'Satisfy', cursive;
+            font-size:2rem;
+            background-color: black;
+            color:lavender;
+        }
+
+        .logo span{
+            font-family: 'Satisfy', cursive;
+            font-size:2.6rem;
+        }
+
+        /* Navbar ends here*/
+
+        /* V day offer starts here*/
+        .homeimageBg{
+            object-fit: cover;
+            width: 100%;
+            z-index:-1;
+            position: absolute;
+            height:62vh;
+        }
+
+        .vdaycontainer{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            height:62vh;
+        }
+
+        .vdayDetails{
+            width:70vh;
+            height:22vh;
+            padding: 5px;
+        }
+
+        .vdayDetails p{
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        #vdayTop{
+            font-weight:500;
+        }
+
+        #vdayBottom{
+            font-weight: 500;
+        }
+
+        #vdayPara{
+            font-size:1rem;
+        }
+
+        .vdayButton{
+            width:170px;
+            margin-top: 7px;
+            padding:2px;
+            font-size: 1rem;
+            background-color: transparent;
+            border-radius: 0px;
+            font-weight: 700;
+            border:2px solid black;
+        }
+        
+        .vdayButton:hover{
+            background-color: black;
+            color:white;
+            cursor: pointer;
+        }
+
+        /* V day offer ends here*/
+        
+        /* New Trends starts here*/
+
+        .newTrends{
+            padding-top:20px;
+            padding-bottom: 30px;
+        }
+
+        .newTrends p{
+            font-size: 2.5rem;
+            padding-left: 5px;
+        }
+
+        .ntTop{
+            text-align: center;
+        }
+
+        .newtrendsContainer{
+            padding-top: 30px;
+            display: flex;
+            justify-content:space-evenly;
+        }
+
+        .newtrendsContainer li{
+            list-style: none;
+        }
+
+        .newtrendsItem{
+            height:355px;
+            width:260px;
+        }
+
+        .newtrendsItem p{
+            font-size: 1.3rem;
+        }
+
+        .newtrendsButton{
+            width:260px;
+            background-color: transparent;
+            border-radius: 0px;
+            padding: 10px;
+            border:1px solid black;
+        }
+
+        .newtrendsButton p{
+            font-size: 1rem;
+        }
+
+        .newtrendsButton:hover{
+            background-color: black;
+            color:white;
+            cursor: pointer;
+        }
+
+
+        /* New Trends ends here*/
+
+
+        /* New Arrivals starts here*/
+
+        .newArrivalsprod{
+            display:flex;
+        }
+
+        .newArrivalsprod .prod{
+            width:1010px;
+            height:60vh;
+            background-color: black;
+            color:white;
+        }
+
+        .prodBg{
+            object-fit: cover;
+            width: 100%;
+            height:60vh;
+        }
+
+        .centerprod{
+            height:60vh;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .centerprod p{
+            text-align: center;
+        }
+
+        .eyeTop{
+            font-size: 1.6rem;
+        }
+
+        .eyeDes{
+            font-size: 1.1rem;
+        }
+
+        .arrivalsButton{
+            width:180px;
+            margin-top:5px;
+            padding:4px;
+            font-size: 0.9rem;
+            background-color: transparent;
+            border-radius: 0px;
+            font-weight: 600;
+            border:1px solid white;
+            color:white;
+            cursor: pointer;
+        }
+
+        .arrivalsButton:hover{
+            background-color: white;
+            color:black;
+            cursor: pointer;
+        }
+
+        /* New Arrivals ends here*/
+
+        /* Footer starts here*/
+
+        .footer{
+            padding-top:40px;
+            padding-left: 40px;
+            padding-right: 40px;
+            background-color: black;
+            color:white;
+        }
+        
+        .footerItem{
+            display:flex;
+            gap:2.3rem;
+        }
+
+        .footerItem li{
+            list-style:none;
+        }
+
+        .footerItemlist p a{
+            text-decoration: none;
+            color:white;
+            font-size:0.8rem;
+        }
+
+        .footerItemlist p a:hover{
+            text-decoration:underline
+        }
+
+        .beIn{
+            font-size:1.5rem;
+            font-weight: 500;
+        }
+
+        .beInpara{
+            font-size: 1rem;
+        }
+
+        form p{
+            padding-top:10px;
+            font-size:0.9rem;
+        }
+
+        input{
+            padding:5px;
+            width:60%;
+            border-radius:0;
+            border:1px solid black;
+        }
+
+        .submit{
+            width:100px;
+            margin-top:5px;
+            padding:4px;
+            font-size: 1rem;
+            background-color: transparent;
+            border-radius: 0px;
+            font-weight: 600;
+            border:1px solid white;
+            color:white;
+            cursor: pointer;
+        }
+
+        .submit:hover{
+            background-color: white;
+            color:black;
+            cursor: pointer;
+        }
+
+        .copyright{
+            margin-top:30px;
+            text-align: center;
+            font-size: 0.8rem;
+            padding:3px;
+        }
+
+        /* Footer ends here*/
+
+        /* Media queries starts here*/
+
+        @media (max-width: 1250px) {
+            .homeUl{
+                flex-direction: row;
+                gap:0.3rem;
+                font-size:0.5rem;
+                padding:22px;
+            }
+
+            .navbar .offer{
+                font-size:0.7rem;
+            }
+
+            .newArrivalsprod{
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            #prod1{
+                height:30vh;
+                padding-bottom:10px;
+            }
+
+            .centerprod{
+                height:30vh;
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .footerItem{
+                flex-wrap: wrap;
+            }
+
+        }
+
+        @media (max-width: 1300px){
+            .newtrendsContainer{
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+            }
+        }
+
+        /* Media queries ends here*/
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar starts here -->
+
+    <nav class="navbar">
+        <p class="offer">SAVE UPTO 25% NOW ON MINI BLUSH + MINI BRONZER. CODE: VDAY <u>SHOP NOW</u></p>
+        <p class="logo"><span>L</span>avender Blush</p>
+        <ul class="homeUl">
+            <li><a href="">NEW</a></li>
+            <li><a href="">BESTSELLERS</a></li>
+            <li><a href="">MAKEUP</a></li>
+            <li><a href="">COLLECTIONS</a></li>
+            <li><a href="">DISCOVER</a></li>
+            <li><a href="">LAST CHANCE</a></li>
+        </ul>
+    </nav>
+    <!-- Navbar ends here -->
+
+    <!-- Vday offer starts here -->
+        <div class="vday">
+            <img class="homeimageBg" src="./images/makeupbg.jpg"/>
+            <div class="vdaycontainer">
+                <div class="vdayDetails">
+                <p class="vdayP" id="vdayTop">VALENTINE'S DAY</p>
+                <p class="vdayP" id="vdayBottom">GIFT GUIDE</p>
+                <p class="vdayP" id="vdayPara">Treat your family, BFFs, or that special someone to something special!</p>
+                <p><button class="vdayButton">SHOP NOW!</button></p>
+                </div>
+            </div>
+        </div>
+
+    <!-- Vday offer ends here -->
+
+    <!-- New Trends starts here -->
+
+    <div class="newTrends">
+        <p class="ntTop">NEW TRENDS</p>
+            <ul class="newtrendsContainer">
+                <li>
+                    <div class="newtrendsItem">
+                        <img src="./images/blush.jpeg" height="260" width="260">
+                        <p>SUGAR CRUSH MATTE BLUSH</p>
+                    </div>
+                    <p style="font-size:1rem; padding-bottom:10px;">$20.00</p>
+                    <button class="newtrendsButton"><p>ADD TO BAG</p></button>
+                </li>
+                <li>
+                    <div class="newtrendsItem">
+                        <img src="./images/lipstick.jpeg" height="260" width="260">
+                        <p>SUGAR CRUSH EXCLUSIVE LIPSTICK</p>
+                    </div>
+                    <p style="font-size:1rem; padding-bottom:10px;">$29.00</p>
+                    <button class="newtrendsButton"><p>ADD TO BAG</p></button>
+                </li>
+                <li>
+                    <div class="newtrendsItem">
+                        <img src="./images/mascara.jpg" height="260" width="260">
+                        <p>LB's EXTRA COVERAGE LONG-LASTING MASCARA</p>
+                    </div>
+                    <p style="font-size:1rem; padding-bottom:10px;">$34.00</p>
+                    <button class="newtrendsButton"><p>ADD TO BAG</p></button>
+                </li>
+                <li>
+                    <div class="newtrendsItem">
+                        <img src="./images/foundation.jpg" height="260" width="260">
+                        <p>SUPER SOFT FULL COVERAGE FOUNDATION</p>
+                    </div>
+                    <p style="font-size:1rem; padding-bottom:10px;">$28.00</p>
+                    <button class="newtrendsButton"><p>ADD TO BAG</p></button>
+                </li>
+            </ul>
+    </div>
+
+    <!-- New Trends ends here -->
+
+    <!-- New arrivals starts here -->
+    <div class="newArrivals">   
+        <div class="newArrivalsprod">
+            <div class="prod" id="prod1">
+                <div class="centerprod">
+                   <p class="eyeTop">EYES TELL ALL</p>
+                   <p class="eyeDes">Unveil your story with our exclusive eyeshadow palettes for a captivating gaze that speaks volumes.</p>
+                   <p><button class="arrivalsButton">SHOP NOW</button></p>
+                </div>
+        </div>
+            <div class="prod">
+                <img class="prodBg" src="./images/eyeshadowpalette.jpg" width="800"/>
+            </div>
+        </div>
+    </div>
+    <!-- New arrivals ends here -->
+
+    <!-- Footer starts here -->
+    <div class="footer">
+        <ul class="footerItem">
+            <li>
+                <div class="footerItemlist">
+                    <h4>ABOUT LAVENDER BLUSH</h4>
+                    <p><a href="">About LAVENDER BLUSH</a></p>
+                    <p><a href="">François LAVENDER BLUSH</a></p>
+                    <p><a href="">LAVENDER BLUSH PRO</a></p>
+                    <p><a href="">Careers</a></p>
+                    <p><a href="">Events</a></p>
+                </div>
+            </li>
+            <li>
+                <div class="footerItemlist">
+                    <h4>MY LAVENDER BLUSH</h4>
+                    <p><a href="">My Account</a></p>
+                    <p><a href="">My Wishlist</a></p>
+                    <p><a href="">Order Status</a></p>
+                    <p><a href="">Get 20% Off</a></p>
+                    <p><a href="">Gift Cards</a></p>
+                    <p><a href="">Check Gift Card Balance</a></p>
+                </div>
+            </li>
+            <li>
+                <div class="footerItemlist">
+                    <h4>HELP & FAQ</h4>
+                    <p><a href="">Contact Us</a></p>
+                    <p><a href="">Text Us: 1-(302)-246-7185<a></p>
+                    <p><a href="">Customer Service<a></p>
+                    <p><a href="">Virtual Artist Consultations</a></p>
+                    <p><a href="">Returns</a></p>
+                    <p><a href="">Afterpay FAQs</a></p>
+                    <p><a href="">Auto-Subscribe FAQs</a></p>
+                </div>
+            </li>
+            <li>
+                <div class="footerItemlist" id="footerForm">
+                    <p class="beIn">BE IN THE LAVENDER BLUSH</p>
+                    <p class="beInpara">Be the first to know about new product launches, exclusive offers and more.</p>
+                    <form>
+                        <p><span style="color:red;">*</span> YOUR FULL NAME</p>
+                        <input type="text" placeholder="YOUR NAME" fname="name" class="name" required>
+                        <br>
+                        <p><span style="color:red;">*</span> WHAT IS YOUR EMAIL ADDRESS?</p>
+                        <input type="email" fname="emailaddress" placeholder="EMAIL ADDRESS" class="email">
+                        <br>
+                        <p><span style="color:red;">*</span> MOBILE NUMBER (10 DIGITS)</p>
+                        <input type="text" fname="phone" placeholder="PHONE NUMBER" class="phone" required>
+                        <br>
+                        <br>
+                        <input type="submit" class="submit">
+                    </form>
+                </div>
+            </li>
+        </ul>
+    <p class="copyright"><span style="font-family: 'Satisfy', cursive;">@</span>2024 LAVENDER BLUSH COSMETICS. ALL RIGHTS RESERVED</p>
+    </div>
+    <!-- Footer ends here-->
+</body>
+</html>
