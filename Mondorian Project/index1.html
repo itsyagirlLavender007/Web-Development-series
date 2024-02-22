@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 1</title>
+    <style>
+        body{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            margin:0;
+            padding:0;
+            height:100vh;
+        }
+
+        .container{
+            background-color: black;
+            height:423px;
+            width:405px;
+            display:grid;
+            grid-template-columns: 50px 30px 120px 50px 50px 60px;
+            grid-template-rows: 50px 60px 30px 170px 50px;
+            gap:9px;
+        }
+
+        .yellow1{
+            background-color: yellow;
+        }
+
+        .red1{
+            background-color: red;
+            grid-column:span 3;
+        }
+
+        .blue1{
+            background-color: blue;
+            grid-column:span 2;
+        }
+
+        .white1{
+            background-color: white;
+            grid-row:span 4;
+        }
+
+        .white2{
+            background-color: white;
+            grid-column:span 4;
+        }
+
+        .white3{
+            background-color: white;
+        }
+
+        .blue2{
+            background-color: blue;
+            grid-row:span 2;
+        }
+
+        .yellow2{
+            background-color: yellow;
+            grid-row: span 2;
+        }
+
+        .blue3{
+            background-color: blue;
+            grid-row: span 2;
+        }
+
+        .red2{
+            background-color: red;
+            grid-row: span 2;
+            grid-column:span 2;
+        }
+
+        .blue4{
+            background-color: blue;
+        }
+
+        .red3{
+            background-color: red;
+            grid-column: span 2;
+            grid-row:span 2;
+        }
+
+        .yellow3{
+            background-color: yellow;
+            grid-column: span 2;
+        }
+
+        .blue4{
+            background-color: blue;
+        }
+        .white4{
+            background-color: white;
+            grid-row:span 2;
+        }
+
+        .red4{
+            background-color: red;
+            grid-column:span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="yellow1"></div>
+        <div class="red1"></div>
+        <div class="blue1"></div>
+        <div class="white1"></div>
+        <div class="white2"></div>
+        <div class="white3"></div>
+        <div class="blue2"></div>
+        <div class="yellow2"></div>
+        <div class="blue3"></div>
+        <div class="red2"></div>
+        <div class="red3"></div>
+        <div class="white4"></div>
+        <div class="yellow3"></div>
+        <div class="blue4"></div>
+        <div class="red4"></div>
+    </div>
+</body>
+</html>
