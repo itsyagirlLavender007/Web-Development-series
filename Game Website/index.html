@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spirit Hunter: Death Mark</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+
+      @import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Rubik+Dirt&display=swap');
+
+      @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+      @import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Teko:wght@300..700&display=swap');
+
+      body{
+          margin:0px;
+          font-family: "Teko", sans-serif;
+          font-optical-sizing: auto;
+      }
+    
+      
+/*Navbar starts here*/  
+
+      .navbar-toggler{
+          border-radius: 0px;
+          border:none;
+      }
+
+      nav{
+          background-color: transparent;
+      }
+
+      .nav-link{
+          color:white;
+          font-size: 1.3rem;
+      }
+
+      #navbar{
+        z-index:2;
+        position: absolute;
+    }
+
+      .nav-link:hover{
+          color:rgb(190, 25, 25);
+      }
+            
+      @keyframes fadeIn {
+          0% { opacity: 0; }
+          100% { opacity: 1; }
+      }  
+
+/*Navbar ends here*/  
+
+
+/* Video Bg starts here*/
+
+      .bg-video{
+          height: 100%;
+          width:100%;
+          object-fit:cover;
+          background-size: cover; 
+          overflow: hidden; 
+          position:absolute;
+          background-attachment: fixed;
+      }
+
+      video {
+        opacity: 0.9;
+    }
+
+      .text-over-video {
+          position: absolute;
+          top: 70%;
+          left: 25%;
+          transform: translate(-50%, -50%);
+          color: white;
+      }
+
+      .dm-title{
+          font-size:7rem;
+          font-family: "Protest Revolution", sans-serif;
+          font-weight: 400;
+      }
+
+      .ava-para{
+        font-size: 3rem;
+      }
+
+      .btn{
+        border-radius: 0px;
+        margin-top: 15px;
+        width:30%;
+        font-size: 1.3rem;
+        color:black;
+        background-color: rgb(112, 15, 15);
+      }
+
+      .btn:hover{
+        background-color: white;
+        color:black;
+      }
+
+/* Video Bg ends here*/
+
+    
+/* Gallery starts here*/
+
+
+    .col .img-fluid:hover{
+      filter: brightness(1.3);
+      cursor: pointer;
+    }
+
+/* Gallery ends here*/
+
+
+/* Story starts here*/
+
+    .card{
+      border-radius: 0px;
+    }
+
+    .story{
+      padding-top:160px;
+      font-size: 4rem;
+      padding-bottom: 30px;
+    }
+
+    .card-text{
+      font-size: 1.3rem;
+      padding-bottom: 10px;
+      font-weight: 300;
+    }
+
+/* Story ends here*/
+
+.card-img-top{
+  height:300px;
+}
+
+/*Media queries starts here*/
+
+@media (max-width: 1024px){
+  .text-over-video {
+    top: 70%;
+    left: 40%;
+    width:70%;
+}
+
+  .story{
+    padding-top:50px;
+    font-size: 3rem;
+    padding-bottom: 20px;
+  }
+
+  .card-text{
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+    font-weight: 300;
+  }
+}
+
+
+@media (max-width: 1000px){
+  .text-over-video {
+    top: 70%;
+    left: 50%;
+    width:70%;
+}
+}
+
+@media(max-width: 900px){
+  .story{
+    padding-top:50px;
+    font-size: 3rem;
+    padding-bottom: 20px;
+  }
+
+  .card-text{
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+    font-weight: 300;
+  }
+}
+
+
+  @media(max-width: 540px){
+
+    .dm-title{
+      font-size:4rem;
+      font-family: "Protest Revolution", sans-serif;
+      font-weight: 400;
+      width:350px;
+  }
+
+  .ava-para{
+    font-size: 1.6rem;
+  }
+    
+    .btn{
+      font-size: 0.9rem;
+      margin-top: -0.5px;
+    }
+
+    .text-over-video {
+      top: 70%;
+      left: 50%;
+  }
+
+    .story{
+      padding-top:20px;
+      font-size: 2rem;
+      padding-bottom: 20px;
+    }
+
+    .card-text{
+      font-size: 0.9rem;
+      padding-bottom: 10px;
+      font-weight: 300;
+    }
+
+    .card-img-top{
+      height:200px;
+    }
+  }
+
+  @media(max-width: 500px){
+    .story{
+      padding-top:10px;
+      font-size: 1rem;
+    }
+
+    .card-text{
+      font-size: 0.6rem;
+      font-weight: 300;
+    }
+  }
+
+  @media(max-width:450px){
+    .text-over-video {
+      left: 40%;
+  }
+  }
+
+  @media(max-width: 360px){
+    .story{
+      padding-top:10px;
+      font-size: 0.8rem;
+    }
+
+    .card-text{
+      font-size: 0.6rem;
+      font-weight: 300;
+      padding:0px;
+    }
+
+    .text-over-video {
+      left: 37%;
+  }
+  }
+
+
+@media (max-width: 280px){
+  .dm-title{
+    font-size: 2rem;
+  }
+
+  .bg-video{
+    height:100%;
+  }
+
+  .btn{
+    font-size: 0.6rem;
+  }
+
+  .story{
+    font-size: 0.8rem;
+    padding:0px;
+    padding-top: 20px;
+  }
+
+  .card-text{
+    font-size: 0.3rem;
+    font-weight: 300;
+    padding:0px;
+  }
+  }   
+
+/*Media queries ends here*/
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar starts here -->
+
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid";>
+          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">TOP</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">TRAILER</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CHARACTER</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">LOCATION</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">GAMEPLAY</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">DLC</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+    <!-- Navbar ends here -->
+
+    
+
+    
+
+    <!-- Video Bg starts here -->
+
+    <div class="bg-trailer" style="position: relative;
+    min-height:100vh;">
+        <video autoplay loop muted plays-inline class="bg-video">
+          <source src="images/Death Mark Trailer.mp4" type="video/mp4">
+        </video>
+        <div class="text-over-video">
+            <h1 class="dm-title">DEATH MARK</h1>
+            <h1 class="ava-para">Available Now</h1>
+            <button type="button" class="btn">BUY NOW</button>
+          </div>
+    </div> 
+
+    <!-- Video Bg ends here-->
+
+    <!-- Gallery slides starts here -->
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <!-- <img src="./images/gallery-1.jpg" class="d-block w-50" alt="..."> -->
+          <div class="row g-0">
+            <div class="col">
+              <img class="img-fluid" src="./images/gallery-1.jpg">
+            </div>
+            <div class="col">
+              <img class="img-fluid" src="./images/gallery-2.jpg">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row g-0">
+            <div class="col">
+              <img class="img-fluid" src="./images/gallery-3.jpg">
+            </div>
+            <div class="col">
+              <img class="img-fluid" src="./images/gallery-4.jpg">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row g-0">
+            <div class="col">
+              <img class="img-fluid" src="./images/gallery-5.jpg">
+            </div>
+            <div class="col">
+              <img class="img-fluid" src="./images/gallery-6.jpg">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row g-0">
+            <div class="col">
+              <img class="img-fluid" src="./images/gallery-7.jpg">
+            </div>
+            <div class="col">
+              <img class="img-fluid" src="./images/gallery-8.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Gallery slides ends here -->
+
+
+    <!-- Story starts here -->
+
+    <div class="card bg-dark text-white">
+      <img src="./images/Yashikiopening.jpg" class="img" style="opacity:0.6" alt="Story"/>
+      <div class="card-img-overlay">
+        <div class="row">
+          <div class="col-lg-2 col-1"></div>
+          <div class="col-lg-4 col-12">
+            <h2 class="story">Story</h2>
+            <p class="card-text">
+              You have been <span style="color:rgb(255, 5, 5);">Marked...</span>
+            </p>
+            <p class="card-text">
+              A strange rumor is spreading through the shadows of Tokyo's H City: a mysterious disfigurement, like a grotesque birthmark, has been appearing on the bodies of certain individuals. Anyone who receives the Mark will rapidly die of unknown, horrifying causes.
+            </p>
+            <p class="card-text">
+              Deprived of your memories, you arrive at a mansion rumored to protect the bearers of the Mark. As the doors swing open, the countdown to death has already begun...
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Story ends here -->
+
+    <!-- Footer starts here -->
+<footer class="bg-dark">
+  <div class="text-center p-1 text-white">
+    ©Copyright 2024 Death Mark
+</footer>
+    <!-- Footer ends here -->
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
