@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid">
+    <div class="mt-5 w-50 mx-auto border border-1 border-dark p-5 backgroundColor">
+    <h1>Guess the Rapper</h1>
+    <button onClick="choosePic()" class="btn btn-dark w-25">Generate Image</button>
+    <br>
+    <br>
+    <img class="myPicture" id="imgname" src="https://yt3.ggpht.com/a/AATXAJwSqnG6Sgtjbg2RhxW6iA8h_T_7y0ZneuwvEw=s900-c-k-c0xffffffff-no-rj-mo" id="imgKrsna" height="260px"
+    width="260px">
+    <br>
+
+    <input class="textBox mt-3 p-2" type="text" name="t1">
+    <br>
+    <br>
+    <button class="subtn btn btn-dark w-25">Submit answer!</button>
+    <p class="answer mt-3"></p>
+    <p>Score: <span class="score"> 0 </span></p>
+    <button class="again btn btn-dark w-25" >Try Again!</button>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
