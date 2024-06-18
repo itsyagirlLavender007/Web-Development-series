@@ -1,0 +1,63 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+
+.container{
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.intro{
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:rgb(147, 15, 15);
+}
+
+.location{
+    color:rgb(11, 117, 11);
+}
+
+
+.btn:hover{
+    border:2px solid rgb(39, 1, 1);
+} 
+
+img{
+    border-radius: 20px;
+}
+
+@media (min-width:319px) and (max-width:480px){
+    img{
+      height:250px;
+    }
+  }
+
+
+  @media (min-width:480px) and (max-width:620px){
+    img{
+      height:300px;
+    }
+  }
+
+  @media (min-width:620px) and (max-width:800px){
+    img{
+      height:350px;
+    }
+  }
+
+  @media (min-width:800px) and (max-width:1000px){
+    img{
+      height:450px;
+    }
+  }
+
+  @media (min-width:1000px) and (max-width:1200px){
+    img{
+      height:500px;
+    }
+  }
