@@ -92,3 +92,14 @@ function checkLocation() {
     document.querySelector(".correct").textContent = isCorrect ? "Correct answer!" : "Wrong answer! Try again!";
 }
 
+//Key press
+document.querySelector('.answer').addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        event.preventDefault();  
+        checkLocation();
+        let modal = new bootstrap.Modal(document.getElementById('exampleModal'));
+        modal.show();
+    }
+});
+
+
