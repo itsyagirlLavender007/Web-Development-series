@@ -1,0 +1,24 @@
+<%- include("partial/header.ejs") %>
+<div class="container" style="height:70vh; background-color:#c19f66;">
+<p class="h1 text-center text-white my-4 p-4">Create a New Post</p>
+    <form action="/submit" method="POST">
+        <div class="title pt-2">
+            <p class="text-center text-white fs-4">
+            <label for="title">Title:</label>
+            <br>
+            <input type="text" id="title" name="title" required style="width:400px; border:2px solid black; border-radius:5px; padding:5px; font-size:20px;">
+            </p>
+        </div>
+        <div class="content">
+            <p class="text-center text-white fs-4">
+            <label for="content">Content:</label>
+            <br>
+            <textarea id="content" name="content" required style="width:400px; border:2px solid black; border-radius:5px; padding:5px; font-size:18px;"></textarea>
+            </p>
+            </div>
+        <p class="text-center fs-4">
+            <button class="text-white bg-dark" type="submit" style="width:200px; border:3px solid black; border-radius:5px; padding:3px;">SUBMIT</button>
+        </p>
+        </form>
+</div>
+    

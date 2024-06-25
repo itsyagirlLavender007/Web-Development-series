@@ -1,0 +1,13 @@
+
+    <%- include("partial/header.ejs") %>
+    <div class="container-fluid vh-100">
+          <p class="h1 text-center pt-5" style="color: #c19f66;">Welcome to BlogThings</p>
+          <p class="text-center fs-5 pt-4">If you want to create a blog then please click <a href="/new">Create New Post</a></p>
+          <% posts.forEach((post, index) => { %>
+              <div class="post px-4">
+                  <h4><a href="/post/<%= index %>" style="text-decoration:none; color: #c19f66; text-transform:uppercase;"><%= post.title %></a></h4>
+              </div>
+          <% }); %>  
+    </div>
+
+    <%- include("partial/footer.ejs") %>
