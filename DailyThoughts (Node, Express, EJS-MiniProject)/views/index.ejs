@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DailyThoughts</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+        img{
+            height: 20vh;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        body{
+            background-color: rgb(28, 13, 26);
+            color:white;
+            font-family: "Josefin Sans", sans-serif;
+        }
+
+        .submit{
+            width:200px;
+            background-color: rgb(85, 85, 85);
+            border:3px solid rgb(56, 56, 56);
+            border-radius: 3px;
+            color:white;
+        }
+
+        .pasT{
+            background-color: rgb(46, 16, 43);
+        }
+
+        .pastthought{
+            text-decoration: none;
+            color:white;
+            font-size: 20px;
+        }
+
+        a:hover{
+            color:blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <img src="https://i.pinimg.com/originals/cd/03/6f/cd036f5078225ff02044f1a614cd3ffa.jpg">
+    </div>
+    <div class="container p-5">
+    <h1 class="pt-5 text-center">Welcome to DailyThoughts</h1>
+    <p class="text-center pt-3">Share you daily thoughts in short words/quotes.</p>
+    <form action="/submit" method="POST">
+        <div class="pt-5 h5">
+            <label for="date">Date:</label>
+            <br>
+            <input class="p-1 mt-2" type="text" name="Date" placeholder="Date Month, Day" required>
+        </div>
+        <div class="pt-3 h5">
+            <label for="quote">Quote:</label>
+            <br>
+            <input class="p-1 mt-2 w-50" type="text" name="Quote" placeholder="One line quote" required>
+        </div>
+        <div>
+            <input class="mt-4 submit" type="submit" value="SUBMIT">
+        </div>
+    </form>
+    <div class="container-fluid pasT p-5 mt-5">
+    <h2 class="text-center">Here are all your thoughts!</h2>
+    <ul class="mt-5">
+        <% dailythoughts.forEach((item, index) => { %>
+            <div class="row">
+                <div class="col-3">
+                    <li><a class="pastthought" href="/info/<%= index %>"><%= item.date %></a></li>
+                </div>
+                <div class="col-9">
+                    <form action="/delete/<%= index %>" method="POST" style="display:inline;">
+                        <button type="submit" style="background-color: rgb(46, 16, 43); border:0px; color:white;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                            <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"/>
+                          </svg></button>
+                    </form>
+                </div>
+            </div>
+        <% }); %>
+    </ul>
+    </div>
+    </div>
+</body>
+</html>
